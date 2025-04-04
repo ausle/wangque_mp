@@ -7,4 +7,11 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box; */
-} 
+}
+/*
+全局字体样式
+*/ 
+page{
+  font-family: "PingFangSC-Thin";
+  font-size:32rpx;
+}
