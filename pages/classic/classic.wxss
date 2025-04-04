@@ -1,1 +1,47 @@
-/* pages/classic/classic.wxss */
+/*
+	微信小程序对弹性盒子布局，支持的很好。容器contanier--容器中的子元素item。
+	如果不指定container的宽和高，默认宽为100%，高为自适应。
+*/
+.container{
+	display: flex;
+	/*子元素的方向*/
+	flex-direction: row;
+	/*
+		主轴和交叉轴，取决于flex的方向。
+		如果flex方向是水平的，主轴就是水平的，交叉轴就是垂直的。
+		如果flex方向是垂直的，主轴就是垂直的，交叉轴就是水平的。
+	*/
+	/* 
+		主轴上的对齐方式flex-start（默认，左对齐）flex-end（右对齐）center（居中）space-between、space-around
+	*/
+	justify-content: flex-start;
+	/* 交叉轴上的对齐方式
+	flex-start、flex-end、center、stretch、baseline
+	stretch、baseline独属于交叉轴的属性。当子元素的高度不指定时，对齐方式为	stretch，子元素高度等同于父元素高度。
+	baseline让子元素对齐，而是让子元素中的文字对齐。
+	*/
+	align-items: flex-start;
+	/*
+		flex-item处理在一个轴线上排不下时的处理情况。默认是no-wrap，也就是排不下时，不换行nowrap。
+	*/
+	flex-wrap: nowrap;
+	height: 400px;
+	background-color: gray;
+}
+
+/*
+*/
+.chunk{
+	width: 200px;
+	height: 100px;
+}
+
+.color1{
+	background-color: blue;
+}
+.color2{
+	background-color: red;
+}
+.color3{
+	background-color: gold;
+}
